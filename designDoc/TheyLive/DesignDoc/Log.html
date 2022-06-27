@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+
+
+<html>
+    
+<a href="index.html"> home</a>
+<a href="notes.html"> notes</a>
+
+<p></p>
+
+<h3>13/05/22</h3>
+
+<ul>
+    <li>
+        Running and camera from zardoz  (check)
+    </li>
+    <li>
+        Order of what to implemnt.
+        <ul>
+            <li>
+                Unarmed:    move -> aim/target -> attack
+            </li>
+            <li>
+                armed:      move -> pickup weapon -> aim/target -> shoot
+            </li>
+            <ul>
+                <li>
+                    so, the order to do things is make sure moving is good -> make sure aiming and targeting is good -> then figure out picking up weapons.
+                </li>
+                <li>
+                    the attack button should work univerally and run a attack function which if unarmed defaults to a punch, but if not unarmed then run attack function on equiped weapon.
+                </li>
+                <li>
+                    unarmed is a weapon as it shows in the inve3ntory as a hand, but you obviously don't need to pick it up.
+                </li>
+            </ul>
+        </ul>
+    </li>
+</ul>
+
+<h3>20/05/22</h3>
+<ul>
+    <li>
+        Aim poses:
+        <ul>
+            <li>
+                Handgun/Mini Uzi    <br>
+                WeaponType 1 
+            </li>
+            <li>
+                Rifle/Big submachine gun    <br>
+                WeaponType 2 
+            </li>
+            <li>
+                Melee weapon
+            </li>
+            <li>
+                Unarmed <br>
+                WeaponType 0 
+            </li>
+            <li>
+                Throwable
+            </li>
+        </ul>
+    </li>
+</ul>
+
+<h3>
+23/05/22
+</h3>
+<ul>
+    <li>
+        Features/Mechanics (i.e. things needed for a prototype) List:
+        <ul>
+            <li>
+                Movement (currently undecided on jumping and crouching)
+            </li>
+            <li>
+                Shooting/Attacking
+            </li>
+            <li>
+                Inventory
+            </li>
+            <li>
+                change weapons
+            </li>
+            <li>
+                Talk to NPC's
+                <li>
+                    Main NPC's have dialogue trees, extra NPC's do the RDR2 thing
+                </li>
+            </li>
+            <li>
+                Enemy AI
+            </li>
+            <li>
+                health
+            </li>
+            <li>
+                Pickup Items
+            </li>
+        </ul>
+    </li>
+</ul>
+
+<li><b>Inventory</b></li>
+<li>
+    is the inventory a scriptable object?<br>
+    If it is, then Player has a Script called Inventory that takes a SO of an inventory <br>
+    if done like this then NPC's will be able to have an inventory <br>
+    So PlayerInventory has a list of gameObjects?
+</li>
+
+<li>
+    first we need to make sure player has weapon -> hits attack button -> weapon attacks
+</li>
+<li>
+    so, you want a class of weapon, which has the function attack, but each attack is different, so base class is abstract, <br>
+    and each derived class (e.g. M16), has a SO called M16 in which we write the shooting script. 
+    <li>
+        so each weapon needs a name, an object and an attack
+    </li>
+</li>
+
+<li>
+    need to figure out inventory wraparound (done);
+</li>
+
+<h3>
+    24/05/22
+</h3>
+
+<li>
+    Pickup + add to inventory
+    <ul>
+        <li>
+            should be simple enough
+        </li>
+    </ul>
+</li>
+</html>
+
