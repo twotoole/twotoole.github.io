@@ -138,5 +138,47 @@
         </li>
     </ul>
 </li>
+
+
+
+<h3>
+    28/08/22
+</h3>
+<li>
+    Pinned notable locations from the scene on a map of LA. This is to aid in the level design. <br>
+       
+    <img src="Media/LevelDesign/LAlandmarks.png" width="150" height="200" >
+</li>
+<li>
+    Found area within a 3D model of downtown LA, and placed in scene. This is also to aid in level design, while trying to stay close to the source material.
+
+</li>
+<li>
+    <ul>
+        <li>
+            Need to change the way the material is changed on the Adverts.
+            <ul>
+                <li>
+                    current system requires creating a new changeMaterial object and assigning the textures (e.g. OBEY/Pepsi)
+                    <ul>
+                        <li>
+                            this will end up in too many unique objects
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    We need to create a prefab that takes two textures and a script that will assign the textures to a parent object.
+                    <ul>
+                        <li>
+                            this can probably just be dont by editing the "Change Material" script to take two materials instead of the scriptable object.
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</li>
+
+
 </html>
 
